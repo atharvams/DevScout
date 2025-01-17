@@ -6,6 +6,10 @@ import { BarLoader } from "react-spinners";
 function ProtectedRoutes({ children }) {
   const { isSignedIn, isLoaded, user } = useUser();
   const { pathname } = useLocation();
+
+  console.log("isSignedIn", isSignedIn);
+  console.log("isLoaded", isLoaded)
+  console.log("user", user);
   
   if (!isLoaded) {
     return <BarLoader className="mt-4" width={"100%"} color="#36d7b7" />; 
