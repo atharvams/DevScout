@@ -1,0 +1,9 @@
+# Redirect all routes to index.html for React (client-side routing)
+/*    /index.html   200
+
+# Clerk authentication callback routes (update these as per your Clerk setup)
+# Example: Clerk uses /sso-callback or similar routes
+/sso-callback    /index.html   200
+/sign-in         /index.html   200
+/sign-up         /index.html   200
+/user-profile    /index.html   200
